@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "csv-project-frontend": {
+    "csv-upload-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/csv-project-frontend",
+            "outputPath": "dist/csv-upload-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -27,7 +27,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
@@ -59,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "csv-project-frontend:build:production"
+              "buildTarget": "csv-upload-frontend:build:production"
             },
             "development": {
-              "buildTarget": "csv-project-frontend:build:development"
+              "buildTarget": "csv-upload-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"

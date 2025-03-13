@@ -1,27 +1,65 @@
-# CsvProjectFrontend
+# CSV Upload Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+A responsive Angular application for uploading and displaying CSV files.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Upload CSV files
+- Display uploaded data in a responsive table
+- Mobile-friendly design
+- Real-time feedback with toast notifications
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular 17+**
+- **Tailwind CSS**
+- **TypeScript**
+- **RxJS**
+- **ngx-toastr** for notifications
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+### Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Make sure you have the following installed:
 
-## Running end-to-end tests
+- **Node.js** (v14 or later)
+- **npm** (v6 or later)
+- Backend API set up and running (see [Backend Setup](#backend-setup)).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Installation
 
-## Further help
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/cirosardinha/csv-upload-frontend.git
+   cd csv-upload-frontend
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   ng serve
+   ```
+
+4. Open your browser and navigate to [http://localhost:4200](http://localhost:4200).
+
+### Environment Configuration
+
+The application uses environment files for configuration:
+
+- **`src/environments/environment.ts`** - Development environment.
+
+Update these files to match your API endpoints.
+
+## Backend Setup
+
+This application requires a backend server running at [http://localhost:3333](http://localhost:3333).  
+Ensure the backend is set up and running before using this application. The backend should handle uploads and process CSV files. 
+
+*For detailed instructions, refer to the corresponding backend repository.*
+
